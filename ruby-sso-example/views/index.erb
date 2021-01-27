@@ -1,0 +1,18 @@
+<% if @current_user %>
+  <h1>Congratulations, you made it in!</h1>
+  <h2> As Promised, Sheldon's dog and facts</h2>
+      <img src="panzer1.jpg" alt="My pup panzer" width ="400" height="333">
+  <ul>
+    <li> Loves dogs, obviously </li>
+    <li> Can play guitar, bass, and drums </li>
+    <li> Once deadlifted 405 lbs </li>
+    <li> Is a cool dude! </li>
+  <ul>
+  <a class='button' href='/logout'>Sign Out</a>
+<% else %>
+  <h1> Welcome to my WorkOS test app! </h1>
+  <a class='button' href='/auth'>Sign In</a>
+  <br></br>
+  <h2> You can learn fun facts about Sheldon and see pictures of his dog
+       but only after signing in! All you need is a Gmail account! </h2>
+<% end %>
